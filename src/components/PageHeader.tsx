@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
 import { motion } from "framer-motion";
+import { ease } from "@/lib/animations";
 
 interface PageHeaderProps {
   title: string;
