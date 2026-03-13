@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+const ease = [0.16, 1, 0.3, 1] as const;
 import { useParams, Link } from "react-router-dom";
 import PageHeader from "@/components/PageHeader";
 import teacher1 from "@/assets/teacher-1.jpg";
