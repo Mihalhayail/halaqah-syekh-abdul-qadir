@@ -223,7 +223,7 @@ const Index = () => {
               <motion.div
                 key={teacher.name}
                 {...stagger}
-                transition={{ duration: 0.6, delay: i * 0.1, ease: [0.16, 1, 0.3, 1] }}
+                transition={{ duration: 0.6, delay: i * 0.1, ease }}
                 className="group"
               >
                 <div className="relative overflow-hidden rounded-2xl aspect-[3/4] mb-4">
