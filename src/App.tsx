@@ -3,8 +3,15 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import Index from "./pages/Index.tsx";
-import NotFound from "./pages/NotFound.tsx";
+import Layout from "@/components/Layout";
+import Index from "./pages/Index";
+import TentangKami from "./pages/TentangKami";
+import { GuruList, GuruDetail } from "./pages/Guru";
+import { ProgramList, ProgramDetail } from "./pages/Program";
+import Galeri from "./pages/Galeri";
+import Peserta from "./pages/Peserta";
+import Kontak from "./pages/Kontak";
+import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
@@ -15,8 +22,17 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Index />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+          <Route element={<Layout />}>
+            <Route path="/" element={<Index />} />
+            <Route path="/tentang" element={<TentangKami />} />
+            <Route path="/guru" element={<GuruList />} />
+            <Route path="/guru/:id" element={<GuruDetail />} />
+            <Route path="/program" element={<ProgramList />} />
+            <Route path="/program/:id" element={<ProgramDetail />} />
+            <Route path="/galeri" element={<Galeri />} />
+            <Route path="/peserta" element={<Peserta />} />
+            <Route path="/kontak" element={<Kontak />} />
+          </Route>
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
