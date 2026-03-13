@@ -12,11 +12,13 @@ import gallery3 from "@/assets/gallery-3.jpg";
 import gallery4 from "@/assets/gallery-4.jpg";
 import { useState } from "react";
 
+const ease = [0.16, 1, 0.3, 1] as const;
+
 const fadeUp = {
   initial: { opacity: 0, y: 30 },
   whileInView: { opacity: 1, y: 0 },
-  viewport: { once: true, margin: "-50px" },
-  transition: { duration: 0.6, ease: [0.16, 1, 0.3, 1] },
+  viewport: { once: true, margin: "-50px" as const },
+  transition: { duration: 0.6, ease },
 };
 
 const stagger = {
