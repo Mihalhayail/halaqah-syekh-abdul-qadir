@@ -63,7 +63,7 @@ const GuruList = () => {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: i * 0.1, ease: [0.16, 1, 0.3, 1] }}
+                transition={{ duration: 0.6, delay: i * 0.1, ease }}
               >
                 <Link to={`/guru/${teacher.id}`} className="group block">
                   <div className="relative overflow-hidden rounded-2xl aspect-[3/4] mb-4">
