@@ -103,7 +103,7 @@ const Index = () => {
             <motion.p
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
+              transition={{ duration: 0.8, delay: 0.15, ease }}
               className="text-body text-muted-foreground mt-6 max-w-lg"
             >
               Majelis Pembelajaran Al-Qur'an, Tahfizh, dan Qira'at untuk
