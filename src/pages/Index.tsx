@@ -113,7 +113,7 @@ const Index = () => {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
+              transition={{ duration: 0.8, delay: 0.3, ease }}
               className="flex flex-wrap gap-4 mt-8"
             >
               <Link to="/program" className="btn-primary-custom">
