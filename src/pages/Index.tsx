@@ -89,7 +89,7 @@ const Index = () => {
             <motion.div
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+              transition={{ duration: 0.8, ease }}
             >
               <p className="text-sm font-medium tracking-[0.15em] uppercase text-primary mb-4">
                 Majelis Ilmu Al-Qur'an
