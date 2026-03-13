@@ -277,7 +277,7 @@ const Index = () => {
               <motion.div
                 key={i}
                 {...stagger}
-                transition={{ duration: 0.6, delay: i * 0.08, ease: [0.16, 1, 0.3, 1] }}
+                transition={{ duration: 0.6, delay: i * 0.08, ease }}
                 className={`relative overflow-hidden rounded-2xl ${i === 0 ? "col-span-2 row-span-2" : ""}`}
               >
                 <img
