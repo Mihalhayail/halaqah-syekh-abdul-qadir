@@ -2,11 +2,13 @@ import { motion } from "framer-motion";
 import PageHeader from "@/components/PageHeader";
 import { Heart, Target, BookOpen, Shield } from "lucide-react";
 
+const ease = [0.16, 1, 0.3, 1] as const;
+
 const fadeUp = {
   initial: { opacity: 0, y: 30 },
   whileInView: { opacity: 1, y: 0 },
   viewport: { once: true },
-  transition: { duration: 0.6, ease: [0.16, 1, 0.3, 1] },
+  transition: { duration: 0.6, ease },
 };
 
 const values = [
