@@ -63,7 +63,7 @@ const Galeri = () => {
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.9 }}
-                  transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
+                  transition={{ duration: 0.4, ease }}
                   className="cursor-pointer overflow-hidden rounded-2xl"
                   onClick={() => setLightbox(item.src)}
                 >
