@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import PageHeader from "@/components/PageHeader";
+const ease = [0.16, 1, 0.3, 1] as const;
 
 const studentsData = [
   { name: "Ahmad Rizki", origin: "Jakarta, Indonesia", program: "Tahfizh Al-Qur'an", hafalan: "15 Juz" },
