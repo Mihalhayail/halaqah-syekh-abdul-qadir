@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+const ease = [0.16, 1, 0.3, 1] as const;
 import PageHeader from "@/components/PageHeader";
 import { MapPin, Mail, Phone, Instagram, Youtube, MessageCircle } from "lucide-react";
 import { useState } from "react";
