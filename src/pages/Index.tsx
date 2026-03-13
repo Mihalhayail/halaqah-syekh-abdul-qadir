@@ -189,7 +189,7 @@ const Index = () => {
               <motion.div
                 key={program.title}
                 {...stagger}
-                transition={{ duration: 0.6, delay: i * 0.1, ease: [0.16, 1, 0.3, 1] }}
+                transition={{ duration: 0.6, delay: i * 0.1, ease }}
                 className="card-elevated"
               >
                 <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6">
