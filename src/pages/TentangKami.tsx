@@ -12,10 +12,26 @@ const fadeUp = {
 };
 
 const values = [
-  { icon: Heart, title: "Ikhlas", desc: "Mengajar dan belajar semata-mata karena Allah SWT." },
-  { icon: Target, title: "Istiqamah", desc: "Konsisten dalam menuntut ilmu dan mengamalkannya." },
-  { icon: BookOpen, title: "Adab Sebelum Ilmu", desc: "Menjunjung tinggi adab dalam setiap proses pembelajaran." },
-  { icon: Shield, title: "Sanad Keilmuan", desc: "Menjaga mata rantai keilmuan hingga Rasulullah ﷺ." },
+  {
+    icon: Heart,
+    title: "Ikhlas",
+    desc: "Mengajar dan belajar semata-mata karena Allah SWT.",
+  },
+  {
+    icon: Target,
+    title: "Istiqamah",
+    desc: "Konsisten dalam menuntut ilmu dan mengamalkannya.",
+  },
+  {
+    icon: BookOpen,
+    title: "Adab Sebelum Ilmu",
+    desc: "Menjunjung tinggi adab dalam setiap proses pembelajaran.",
+  },
+  {
+    icon: Shield,
+    title: "Sanad Keilmuan",
+    desc: "Menjaga mata rantai keilmuan hingga Rasulullah ﷺ.",
+  },
 ];
 
 const TentangKami = () => {
@@ -38,16 +54,26 @@ const TentangKami = () => {
             </h2>
             <div className="text-body text-muted-foreground space-y-4">
               <p>
-                Halaqah Syekh Abdul Qadir didirikan dengan semangat menjaga sanad
-                keilmuan Al-Qur'an yang bersambung hingga Rasulullah ﷺ. Bermula
-                dari halaqah kecil di Mesir, kini telah berkembang menjadi majelis
-                ilmu yang diikuti oleh penuntut ilmu dari berbagai penjuru.
+                Halaqah Tajwidul Huruf atau sekarang yang dikenal dengan Halaqah
+                Al-Quran Syekh Abdul Qadir adalah majlis littaallum wa ta’lim
+                Al-Qur’an (belajar dan mengajar AlQur’an), melalui silsilah
+                sanad keilmuan Al- Qur’an dari Syekh Abdul Qadir Muhammad Tamam
+                Ali Al-Ausiy Asy-Syafi’i Al-Azhary.
               </p>
               <p>
-                Dengan metode talaqqi dan musyafahah yang telah teruji sejak zaman
-                salaf, halaqah ini berkomitmen untuk melahirkan generasi huffazh
-                yang tidak hanya hafal Al-Qur'an, tetapi juga memahami dan
-                mengamalkannya dalam kehidupan sehari-hari.
+                Halaqah ini berdiri pada tahun 2018 atas arahan dan amanah dari
+                Maulana Syekh Abdul Qadir. Tujuan berdirinya majelis ini adalah
+                untuk membina para Qurra’ masa depan yang akan meneruskan
+                silsilah halaqah-halaqah Qur’an yang sudah diwariskan dari
+                generasi ke generasi oleh kaum Muslimin.
+              </p>
+              <p>
+                Metode belajar dan mengajar Al-Qur’an yang berjalan di halaqah
+                ini, mengutamakan kualitas bacaan, baik secara Tathbiqi (praktek
+                langsung baca dengan bimbingan muqri’) dan Nazhari(teori).
+                Halaqah Syekh Abdul Qadir bertempat di Gamaliyah, tepat di
+                samping Masjid Sayyidina Hussein di Mesir. Halaqah ini berada di
+                bawah payung Muassasah Al-Halaqah Liihya At-Turas Mesir.
               </p>
             </div>
           </motion.div>
@@ -60,16 +86,24 @@ const TentangKami = () => {
         <div className="container-custom relative z-10">
           <div className="grid md:grid-cols-2 gap-16">
             <motion.div {...fadeUp}>
-              <p className="text-sm font-medium tracking-[0.15em] uppercase text-primary mb-4">Visi</p>
-              <h2 className="heading-section text-foreground mb-6">Visi Kami</h2>
+              <p className="text-sm font-medium tracking-[0.15em] uppercase text-primary mb-4">
+                Visi
+              </p>
+              <h2 className="heading-section text-foreground mb-6">
+                Visi Kami
+              </h2>
               <p className="font-serif text-xl text-foreground/90 italic leading-relaxed">
                 "Menjadi majelis pembelajaran Al-Qur'an yang melahirkan generasi
                 huffazh dan penuntut ilmu yang menjaga sanad Al-Qur'an."
               </p>
             </motion.div>
             <motion.div {...fadeUp}>
-              <p className="text-sm font-medium tracking-[0.15em] uppercase text-primary mb-4">Misi</p>
-              <h2 className="heading-section text-foreground mb-6">Misi Kami</h2>
+              <p className="text-sm font-medium tracking-[0.15em] uppercase text-primary mb-4">
+                Misi
+              </p>
+              <h2 className="heading-section text-foreground mb-6">
+                Misi Kami
+              </h2>
               <ul className="space-y-4 text-body text-muted-foreground">
                 <li className="flex gap-3">
                   <span className="w-2 h-2 rounded-full bg-primary mt-2.5 shrink-0" />
@@ -115,7 +149,11 @@ const TentangKami = () => {
                 className="text-center"
               >
                 <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <value.icon className="text-primary" size={28} strokeWidth={1.5} />
+                  <value.icon
+                    className="text-primary"
+                    size={28}
+                    strokeWidth={1.5}
+                  />
                 </div>
                 <h3 className="font-serif text-xl font-semibold text-foreground mb-2">
                   {value.title}

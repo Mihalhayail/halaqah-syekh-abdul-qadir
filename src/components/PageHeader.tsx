@@ -10,13 +10,13 @@ interface PageHeaderProps {
 
 const PageHeader = ({ title, subtitle }: PageHeaderProps) => {
   return (
-    <section className="maroon-section pt-32 pb-20 md:pt-40 md:pb-28">
+    <section className="cream-section pt-32 pb-20 md:pt-40 md:pb-28">
       <div className="container-custom relative z-10 text-center">
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease }}
-          className="heading-display text-primary-foreground"
+          className="heading-display text-primary"
         >
           {title}
         </motion.h1>
@@ -25,7 +25,7 @@ const PageHeader = ({ title, subtitle }: PageHeaderProps) => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1, ease }}
-            className="text-body text-primary-foreground/80 mt-4 max-w-2xl mx-auto"
+            className="text-body text-foreground mt-4 max-w-2xl mx-auto"
           >
             {subtitle}
           </motion.p>

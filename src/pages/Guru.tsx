@@ -2,8 +2,8 @@ import { motion } from "framer-motion";
 const ease = [0.16, 1, 0.3, 1] as const;
 import { useParams, Link } from "react-router-dom";
 import PageHeader from "@/components/PageHeader";
-import teacher1 from "@/assets/teacher-1.jpg";
-import teacher2 from "@/assets/teacher-2.jpg";
+import teacher1 from "@/assets/syekh-abdul-qadir.png";
+import teacher2 from "@/assets/tgk-zaky.png";
 import teacher3 from "@/assets/teacher-3.jpg";
 import { ArrowLeft } from "lucide-react";
 
@@ -13,27 +13,41 @@ const teachersData = [
     name: "Syekh Abdul Qadir",
     specialty: "AHLI QIRA'AT AL-QUR'AN",
     image: teacher1,
-    bio: "Syekh Abdul Qadir adalah seorang ulama ahli Qira'at Al-Qur'an yang telah mengabdikan hidupnya untuk mengajarkan ilmu Al-Qur'an selama lebih dari 30 tahun. Beliau memiliki sanad yang bersambung hingga Rasulullah ﷺ dalam berbagai riwayat qira'at.",
-    education: [
-      "Al-Azhar University, Kairo - Fakultas Ushuluddin",
-      "Ijazah Qira'at Sab'ah dari Syekh Ahmad al-Zayyat",
-      "Ijazah Qira'at 'Asyr dari Syekh Abdurrahman al-Sudais",
+    bio: [
+      "Fadhilatu Al-Syeikh Abdul Qadir Muhammad Tamam Ali Al-Ausiy Asy-Syafi’i Al-Azhary adalah sosok guru yang menjadi suri tauladan bagi para murid-muridnya. Beliau mendidik muridnya-muridnya dengan lisanulhal. Murid belajar menjadi seorang muslim yang bernafaskan AlQur’an dengan melihat langsung keseharian beliau.",
+      "Suatu hari saya pernah bertanya kepada Beliau: “Maulana apakah Hadhratak (yang terhormat/yang mulia) tidak capek mengajar Al-Qur’an dari pagi sampai jam sebelas malam setiap hari?” Dengan ringan Beliau pun menjawab, “Zaky kamu tahu hubungan ikan dengan air? Nah begitulah saya dengan Al-Qur’an.",
+      "Sebelum Syekh Abdul Qadir mengkhidmah Al-Qur’an di Halaqah Liihya At-Turas Mesir, beliau mengajarkan Fiqih Syafii di Madinatul Bu’ust dan masjid Al-Azhar. Walaupun kakek beliau bermazhab Hanafi bahkan sampai digelari Hanafi Shaghir di sana, namun beliau bermazhab Syafii. Beliau belajar Fiqih Syafi’i dari paman Beliau. Syekh Abdul Qadir juga merupakan murid langsung dari Syekh Ali Jum’ah Hafizhahullah dan belajar Ushul Fiqih langsung bersama Syeikh Thaha Rayyan Rahimahullah di kediaman Beliau. ",
+      "Syekh pernah bercerita kepada kami, “Dulu ketika kami belajar satu kitab kepada guru,tidak boleh naik tangga ke jenjang selanjutnya sebelum kitab yang kami pelajari mampu kami ajarkan. Begitu seterusnya sehingga kita terlatih dalam belajar dan mengajar.”",
+      "Di lain kesempatan beliau juga bercerita kepada kami, “Ketika saya menyetorkan Qiraat, bacaan yang pertama saya baca adalah Qiraat Imam Ibnu Katsir karena Imam Syafi’i membaca qiraat tersebut.” Ini salah satu bukti cinta beliau kepada Imam Syafii. Beliau terkadang melempar candaan ketika shalat maghrib berjamaah, “Mana yang bermazhab Imam Hanafi ayo jadi imam, kita menghargai guru kita” begitu kata beliau, karena Imam Hanafi sangat dihormati oleh Imam Syafi’i.",
+      "Ketika Syekh mengkhidmah Al-Qur’an,murid-murid banyak yang datang belajar kepada beliau, sehingga waktu beliau enuh dengan Al-Qur’an saja. Baik siang dan malam hari. Dalam mengajarkan Al-Qur’an, Maulana Syekh sangat memperhatikan dua hal, yaitu: praktek langsung dan teori ilmu Tajwid.",
     ],
-    expertise: ["Qira'at Sab'ah", "Qira'at 'Asyr", "Tajwid", "Tafsir Al-Qur'an"],
-    sanad: "Sanad bersambung melalui jalur Imam Hafs 'an 'Ashim hingga Rasulullah ﷺ, melalui para imam qurra' yang masyhur di setiap generasi.",
+    education: [
+      "Al-Azhar University, Kairo - Fakultas .......",
+      "Ijazah Qira'at Sab'ah dari .......",
+      "Ijazah Qira'at 'Asyr dari ......",
+    ],
+    expertise: [
+      "Qira'at Sab'ah",
+      "Qira'at 'Asyr",
+      "Tajwid",
+      "Tafsir Al-Qur'an",
+    ],
+    sanad:
+      "Sanad bersambung melalui jalur Imam Hafs 'an 'Ashim hingga Rasulullah ﷺ, melalui para imam qurra' yang masyhur di setiap generasi.",
   },
   {
-    id: "ustadz-ahmad-fauzi",
-    name: "Ustadz Ahmad Fauzi",
+    id: "tgk-zaky-mubarrak",
+    name: "Tgk Zaky Mubarrak",
     specialty: "TAHFIZH AL-QUR'AN",
     image: teacher2,
-    bio: "Ustadz Ahmad Fauzi adalah hafizh Al-Qur'an yang telah menghafal 30 juz sejak usia muda. Beliau telah membimbing ratusan santri dalam program tahfizh dengan metode yang efektif dan teruji.",
+    bio: "Tgk Zaky Mubarrak adalah hafizh Al-Qur'an yang telah menghafal 30 juz sejak usia muda. Beliau telah membimbing ratusan santri dalam program tahfizh dengan metode yang efektif dan teruji.",
     education: [
       "Universitas Islam Madinah - Fakultas Al-Qur'an",
       "Ijazah Hafalan 30 Juz dari Syekh Muhammad al-Luhaidan",
     ],
     expertise: ["Tahfizh Al-Qur'an", "Tajwid", "Metode Menghafal"],
-    sanad: "Sanad hafalan bersambung melalui jalur para huffazh Madinah hingga Rasulullah ﷺ.",
+    sanad:
+      "Sanad hafalan bersambung melalui jalur para huffazh Madinah hingga Rasulullah ﷺ.",
   },
   {
     id: "ustadz-ibrahim-hasan",
@@ -46,14 +60,18 @@ const teachersData = [
       "Ijazah Tajwid dari Syekh Ayman Suwaid",
     ],
     expertise: ["Tajwid", "Talaqqi", "Musyafahah", "Bahasa Arab"],
-    sanad: "Sanad tajwid bersambung melalui jalur ulama Mesir hingga Rasulullah ﷺ.",
+    sanad:
+      "Sanad tajwid bersambung melalui jalur ulama Mesir hingga Rasulullah ﷺ.",
   },
 ];
 
 const GuruList = () => {
   return (
     <div>
-      <PageHeader title="Guru & Pengajar" subtitle="Para pengajar bersanad yang membimbing halaqah" />
+      <PageHeader
+        title="Struktur Halaqah Syekh Abdul Qadir"
+        subtitle="Para pembimbing dan pengajar bersanad yang membina halaqah"
+      />
       <section className="section-padding bg-background">
         <div className="container-custom">
           <div className="grid md:grid-cols-3 gap-8">
@@ -109,7 +127,10 @@ const GuruDetail = () => {
       <PageHeader title={teacher.name} subtitle={teacher.specialty} />
       <section className="section-padding bg-background">
         <div className="container-custom">
-          <Link to="/guru" className="inline-flex items-center gap-2 text-primary mb-8 hover:gap-3 transition-all">
+          <Link
+            to="/guru"
+            className="inline-flex items-center gap-2 text-primary mb-8 hover:gap-3 transition-all"
+          >
             <ArrowLeft size={16} /> Kembali ke Daftar Guru
           </Link>
           <div className="grid lg:grid-cols-3 gap-12">
@@ -131,21 +152,45 @@ const GuruDetail = () => {
               className="lg:col-span-2 space-y-8"
             >
               <div>
-                <h3 className="font-serif text-2xl font-semibold text-foreground mb-3">Biografi</h3>
-                <p className="text-body text-muted-foreground">{teacher.bio}</p>
+                <h3 className="font-serif text-2xl font-semibold text-foreground mb-3">
+                  Biografi
+                </h3>
+                <div className="space-y-4">
+                  {Array.isArray(teacher.bio) ? (
+                    teacher.bio.map((paragraph, index) => (
+                      <p
+                        key={index}
+                        className="text-body text-muted-foreground"
+                      >
+                        {paragraph}
+                      </p>
+                    ))
+                  ) : (
+                    <p className="text-body text-muted-foreground">
+                      {teacher.bio}
+                    </p>
+                  )}
+                </div>
               </div>
               <div>
-                <h3 className="font-serif text-2xl font-semibold text-foreground mb-3">Bidang Keilmuan</h3>
+                <h3 className="font-serif text-2xl font-semibold text-foreground mb-3">
+                  Bidang Keilmuan
+                </h3>
                 <div className="flex flex-wrap gap-2">
                   {teacher.expertise.map((e) => (
-                    <span key={e} className="px-4 py-2 rounded-full bg-secondary text-secondary-foreground text-sm font-medium">
+                    <span
+                      key={e}
+                      className="px-4 py-2 rounded-full bg-secondary text-secondary-foreground text-sm font-medium"
+                    >
                       {e}
                     </span>
                   ))}
                 </div>
               </div>
               <div>
-                <h3 className="font-serif text-2xl font-semibold text-foreground mb-3">Riwayat Pendidikan</h3>
+                <h3 className="font-serif text-2xl font-semibold text-foreground mb-3">
+                  Riwayat Pendidikan
+                </h3>
                 <ul className="space-y-2 text-muted-foreground">
                   {teacher.education.map((e) => (
                     <li key={e} className="flex gap-3">
@@ -156,8 +201,12 @@ const GuruDetail = () => {
                 </ul>
               </div>
               <div>
-                <h3 className="font-serif text-2xl font-semibold text-foreground mb-3">Sanad</h3>
-                <p className="text-body text-muted-foreground">{teacher.sanad}</p>
+                <h3 className="font-serif text-2xl font-semibold text-foreground mb-3">
+                  Sanad
+                </h3>
+                <p className="text-body text-muted-foreground">
+                  {teacher.sanad}
+                </p>
               </div>
             </motion.div>
           </div>

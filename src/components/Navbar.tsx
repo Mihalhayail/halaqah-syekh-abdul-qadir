@@ -6,10 +6,10 @@ import { motion, AnimatePresence } from "framer-motion";
 const navLinks = [
   { label: "Home", path: "/" },
   { label: "Tentang Kami", path: "/tentang" },
-  { label: "Guru", path: "/guru" },
   { label: "Program", path: "/program" },
+  { label: "Struktur", path: "/guru" },
   { label: "Galeri", path: "/galeri" },
-  { label: "Peserta", path: "/peserta" },
+  { label: "Produk", path: "/produk" },
   { label: "Kontak", path: "/kontak" },
 ];
 

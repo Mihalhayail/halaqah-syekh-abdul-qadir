@@ -9,7 +9,7 @@ import TentangKami from "./pages/TentangKami";
 import { GuruList, GuruDetail } from "./pages/Guru";
 import { ProgramList, ProgramDetail } from "./pages/Program";
 import Galeri from "./pages/Galeri";
-import Peserta from "./pages/Peserta";
+import Produk from "./pages/Produk";
 import Kontak from "./pages/Kontak";
 import NotFound from "./pages/NotFound";
 
@@ -30,7 +30,7 @@ const App = () => (
             <Route path="/program" element={<ProgramList />} />
             <Route path="/program/:id" element={<ProgramDetail />} />
             <Route path="/galeri" element={<Galeri />} />
-            <Route path="/peserta" element={<Peserta />} />
+            <Route path="/produk" element={<Produk />} />
             <Route path="/kontak" element={<Kontak />} />
           </Route>
           <Route path="*" element={<NotFound />} />

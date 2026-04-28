@@ -1,10 +1,19 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { BookOpen, Users, Mic, Star, GraduationCap, Calendar, ChevronRight, Quote } from "lucide-react";
+import {
+  BookOpen,
+  Users,
+  Mic,
+  Star,
+  GraduationCap,
+  Calendar,
+  ChevronRight,
+  Quote,
+} from "lucide-react";
 import CountUp from "@/components/CountUp";
 import heroQuran from "@/assets/hero-quran.jpg";
-import teacher1 from "@/assets/teacher-1.jpg";
-import teacher2 from "@/assets/teacher-2.jpg";
+import teacher1 from "@/assets/syekh-abdul-qadir.png";
+import teacher2 from "@/assets/tgk-zaky.png";
 import teacher3 from "@/assets/teacher-3.jpg";
 import gallery1 from "@/assets/gallery-1.jpg";
 import gallery2 from "@/assets/gallery-2.jpg";
@@ -30,49 +39,60 @@ const stagger = {
 const programs = [
   {
     icon: BookOpen,
-    title: "Tahfizh Al-Qur'an",
+    title: "Talaqqi Al-Qur'an Tathbiqi",
     desc: "Program intensif menghafal Al-Qur'an dengan mutqin, dibimbing langsung oleh pengajar bersanad.",
   },
   {
     icon: Mic,
-    title: "Talaqqi Al-Qur'an",
-    desc: "Pembelajaran membaca Al-Qur'an dengan metode talaqqi dan musyafahah langsung dari guru.",
+    title: "Talaqqi Al-Qur'an Nazhran",
+    desc: "Pembelajaran membaca Al-Qur'an dengan metode talaqqi dan musyafahah langsung, hifzhan dan nazhran.",
   },
   {
     icon: Star,
-    title: "Qira'at Al-Qur'an",
+    title: "Talaqqi Al-Qur'an Online",
     desc: "Mempelajari ilmu qira'at dan berbagai riwayat bacaan Al-Qur'an yang mutawatir.",
   },
 ];
 
 const teachers = [
-  { name: "Syekh Abdul Qadir", specialty: "AHLI QIRA'AT", image: teacher1 },
-  { name: "Ustadz Ahmad Fauzi", specialty: "TAHFIZH AL-QUR'AN", image: teacher2 },
-  { name: "Ustadz Ibrahim Hasan", specialty: "TALAQQI & TAJWID", image: teacher3 },
+  { name: "Maulana Syekh Abdul Qadir", specialty: "Pembina", image: teacher1 },
+  {
+    name: "Tgk. Zaky Mubarrak MS,Lc,.Dipl.",
+    specialty: "Pemimpin",
+    image: teacher2,
+  },
+  {
+    name: "Tgk. Aditya Wiryawan",
+    specialty: "Ketua/Wakil Pimpinan",
+    image: teacher3,
+  },
 ];
 
 const stats = [
-  { number: 30, suffix: "+", label: "Peserta" },
-  { number: 10, suffix: "+", label: "Pengajar" },
+  { number: 278, suffix: "+", label: "Peserta" },
+  { number: 30, suffix: "+", label: "Muqri'" },
   { number: 5, suffix: "+", label: "Program" },
   { number: 100, suffix: "+", label: "Kegiatan" },
 ];
 
 const testimonials = [
   {
-    quote: "Alhamdulillah, belajar di Halaqah Syekh Abdul Qadir mengubah cara saya memahami dan membaca Al-Qur'an. Sanad keilmuan yang terjaga membuat saya yakin dengan apa yang dipelajari.",
-    name: "Ahmad Rizki",
-    program: "Peserta Tahfizh",
+    quote:
+      "Alhamdulillah, belajar di Halaqah Syekh Abdul Qadir mengubah cara saya memahami dan membaca Al-Qur'an. Sanad keilmuan yang terjaga membuat saya yakin dengan apa yang dipelajari.",
+    name: "Ilham Rivaldi",
+    program: "Senior Halaqah",
   },
   {
-    quote: "Metode talaqqi yang diterapkan sangat efektif. Dalam waktu singkat, bacaan saya menjadi lebih baik dan sesuai kaidah tajwid yang benar.",
+    quote:
+      "Metode talaqqi yang diterapkan sangat efektif. Dalam waktu singkat, bacaan saya menjadi lebih baik dan sesuai kaidah tajwid yang benar.",
     name: "Muhammad Fajar",
-    program: "Peserta Talaqqi",
+    program: "Anggota",
   },
   {
-    quote: "Suasana belajar yang penuh adab dan ilmu. Para pengajar sangat sabar dan kompeten dalam membimbing setiap peserta.",
+    quote:
+      "Suasana belajar yang penuh adab dan ilmu. Para pengajar sangat sabar dan kompeten dalam membimbing setiap peserta.",
     name: "Abdullah Syahid",
-    program: "Peserta Qira'at",
+    program: "Muqri Halaqah",
   },
 ];
 
@@ -92,7 +112,7 @@ const Index = () => {
               transition={{ duration: 0.8, ease }}
             >
               <p className="text-sm font-medium tracking-[0.15em] uppercase text-primary mb-4">
-                Majelis Ilmu Al-Qur'an
+                Halaqah Al-Qur'an
               </p>
               <h1 className="heading-display text-primary leading-tight">
                 Menjaga Sanad,
@@ -106,9 +126,8 @@ const Index = () => {
               transition={{ duration: 0.8, delay: 0.15, ease }}
               className="text-body text-muted-foreground mt-6 max-w-lg"
             >
-              Majelis Pembelajaran Al-Qur'an, Tahfizh, dan Qira'at untuk
-              Penuntut Ilmu yang ingin mendalami ilmu Al-Qur'an dengan sanad
-              yang terjaga.
+              Masuklah ke rumah-rumah melalui pintunya, dan pintu daripada ilmu
+              adalah Al-Quran.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -147,18 +166,24 @@ const Index = () => {
       <section className="section-padding bg-background">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center">
-            <motion.p {...fadeUp} className="text-sm font-medium tracking-[0.15em] uppercase text-primary mb-4">
+            <motion.p
+              {...fadeUp}
+              className="text-sm font-medium tracking-[0.15em] uppercase text-primary mb-4"
+            >
               Tentang Kami
             </motion.p>
             <motion.h2 {...fadeUp} className="heading-section text-foreground">
               Halaqah Syekh Abdul Qadir
             </motion.h2>
-            <motion.p {...fadeUp} className="text-body text-muted-foreground mt-6">
-              Halaqah Syekh Abdul Qadir adalah majelis pembelajaran Al-Qur'an yang
-              berdiri dengan tujuan mulia: menjaga sanad keilmuan Al-Qur'an dan
-              melahirkan generasi huffazh yang berakhlak Qurani. Dengan metode
-              talaqqi dan musyafahah, setiap peserta dibimbing langsung oleh
-              pengajar yang memiliki sanad hingga Rasulullah ﷺ.
+            <motion.p
+              {...fadeUp}
+              className="text-body text-muted-foreground mt-6"
+            >
+              Halaqah Syekh Abdul Qadir adalah majelis pembelajaran Al-Qur'an
+              yang berdiri dengan tujuan mulia: menjaga sanad keilmuan Al-Qur'an
+              dan melahirkan generasi huffazh yang berakhlak Qurani. Dengan
+              metode talaqqi dan musyafahah, setiap peserta dibimbing langsung
+              oleh pengajar yang memiliki sanad hingga Rasulullah ﷺ.
             </motion.p>
             <motion.div {...fadeUp}>
               <Link
@@ -193,7 +218,11 @@ const Index = () => {
                 className="card-elevated"
               >
                 <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6">
-                  <program.icon className="text-primary" size={24} strokeWidth={1.5} />
+                  <program.icon
+                    className="text-primary"
+                    size={24}
+                    strokeWidth={1.5}
+                  />
                 </div>
                 <h3 className="font-serif text-2xl font-semibold text-foreground mb-3">
                   {program.title}
@@ -254,7 +283,9 @@ const Index = () => {
                 <div className="text-4xl md:text-5xl font-serif font-bold mb-2">
                   <CountUp end={stat.number} suffix={stat.suffix} />
                 </div>
-                <p className="text-primary-foreground/70 text-sm">{stat.label}</p>
+                <p className="text-primary-foreground/70 text-sm">
+                  {stat.label}
+                </p>
               </motion.div>
             ))}
           </div>
@@ -289,7 +320,10 @@ const Index = () => {
             ))}
           </div>
           <motion.div {...fadeUp} className="text-center mt-8">
-            <Link to="/galeri" className="inline-flex items-center gap-2 text-primary font-medium hover:gap-3 transition-all">
+            <Link
+              to="/galeri"
+              className="inline-flex items-center gap-2 text-primary font-medium hover:gap-3 transition-all"
+            >
               Lihat Semua Galeri <ChevronRight size={16} />
             </Link>
           </motion.div>
@@ -320,7 +354,9 @@ const Index = () => {
                     key={i}
                     onClick={() => setCurrentTestimonial(i)}
                     className={`w-2.5 h-2.5 rounded-full transition-all ${
-                      i === currentTestimonial ? "bg-primary w-8" : "bg-primary/30"
+                      i === currentTestimonial
+                        ? "bg-primary w-8"
+                        : "bg-primary/30"
                     }`}
                   />
                 ))}
@@ -333,12 +369,18 @@ const Index = () => {
       {/* CTA */}
       <section className="maroon-section py-20 md:py-28">
         <div className="container-custom relative z-10 text-center">
-          <motion.h2 {...fadeUp} className="heading-section text-primary-foreground max-w-2xl mx-auto">
-            Gabung Bersama Kami dalam Majelis Al-Qur'an
+          <motion.h2
+            {...fadeUp}
+            className="heading-section text-primary-foreground max-w-2xl mx-auto"
+          >
+            Gabung Bersama Kami di dalam Halaqah Al-Qur'an
           </motion.h2>
-          <motion.p {...fadeUp} className="text-primary-foreground/80 mt-4 max-w-lg mx-auto">
-            Mulai perjalanan ilmu Anda bersama para pengajar bersanad dan
-            komunitas penuntut ilmu yang istiqamah.
+          <motion.p
+            {...fadeUp}
+            className="text-primary-foreground/80 mt-4 max-w-lg mx-auto"
+          >
+            Mulai perjalanan ilmu Anda bersama para muqri bersanad dan komunitas
+            penuntut ilmu yang istiqamah.
           </motion.p>
           <motion.div {...fadeUp} className="mt-8">
             <Link

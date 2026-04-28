@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -45,8 +45,8 @@
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 0 48% 36%;
 
-    --font-serif: 'Playfair Display', Georgia, serif;
-    --font-sans: 'Inter', system-ui, sans-serif;
+    --font-serif: "Poppins", Georgia, serif;
+    --font-sans: "Inter", system-ui, sans-serif;
 
     --shadow-maroon: 0 20px 50px rgba(134, 49, 49, 0.08);
     --shadow-maroon-lg: 0 30px 60px rgba(134, 49, 49, 0.12);
@@ -85,7 +85,12 @@
     font-family: var(--font-sans);
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: var(--font-serif);
     letter-spacing: -0.03em;
   }
@@ -93,7 +98,7 @@
 
 @layer components {
   .pattern-islamic {
-    background-image: url('/src/assets/islamic-pattern.png');
+    background-image: url("/src/assets/islamic-pattern.png");
     background-size: 200px;
     background-repeat: repeat;
     opacity: 0.04;
@@ -172,10 +177,10 @@
   }
 
   .maroon-section::before {
-    content: '';
+    content: "";
     position: absolute;
     inset: 0;
-    background-image: url('/src/assets/islamic-pattern.png');
+    background-image: url("/src/assets/islamic-pattern.png");
     background-size: 200px;
     background-repeat: repeat;
     opacity: 0.05;
