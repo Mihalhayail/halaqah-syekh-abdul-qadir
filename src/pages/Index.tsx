@@ -12,8 +12,8 @@ import {
 } from "lucide-react";
 import CountUp from "@/components/CountUp";
 import heroQuran from "@/assets/hero-quran.jpg";
-import teacher1 from "@/assets/teacher-1.png";
-import teacher2 from "@/assets/tgk-zaky.png";
+import teacher1 from "@/assets/syekh-abdul-qadir.jpg";
+import teacher2 from "@/assets/tgk-zaky.webp";
 // import teacher3 from "@/assets/teacher-3.jpg";
 import gallery1 from "@/assets/gallery-1.jpg";
 import gallery2 from "@/assets/gallery-2.jpg";
