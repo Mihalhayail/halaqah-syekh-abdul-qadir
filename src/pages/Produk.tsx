@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import PageHeader from "@/components/PageHeader";
 import heroQuran from "@/assets/hero-quran.jpg";
+import tajwidHuruf from "@/assets/tajwid-huruf.png";
 const ease = [0.16, 1, 0.3, 1] as const;
 
 const productData = [
@@ -93,8 +94,8 @@ const Produk = () => {
               >
                 <div className="flex items-center justify-center mb-4">
                   <img
-                    src={heroQuran}
-                    alt="Al-Qur'an di atas rehal"
+                    src={tajwidHuruf}
+                    alt="Tajwidul Huruf"
                     className="rounded-sm"
                   />
                   {/* <span className="font-serif text-xl font-bold text-primary">

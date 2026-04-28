@@ -80,6 +80,63 @@ const TentangKami = () => {
         </div>
       </section>
 
+      {/* Manhajiah */}
+      <section className="section-padding bg-background">
+        <div className="container-custom max-w-4xl">
+          <motion.div {...fadeUp}>
+            <p className="text-sm font-medium tracking-[0.15em] uppercase text-primary mb-4">
+              Manhajiyah
+            </p>
+            <h2 className="heading-section text-foreground mb-6">
+              Metode Pembelajaran Kami
+            </h2>
+            <div className="text-body text-muted-foreground space-y-4">
+              <p>
+                Metode belajar dan mengajar Al-Qur’an yang berjalan di halaqah
+                ini, mengutamakan kualitas bacaan, baik secara tathbiqi (praktek
+                langsung baca yang dibimbing oleh guru) dan nazhari (teori).
+              </p>
+              <p>
+                Para pengajar (Muqri’ Halaqah) adalah murid dari Maulana Syekh
+                Abdul Qadir yang sudah diberikan ijazah untuk mengajar. Untuk
+                Ilmu Tajwid -nazhari (teori)-, kitab rujukan dalam majelis ini
+                adalah kitab “Tajwidul Huruf” yang merupakan hasil dari
+                muhadarah Syekh Abdul Qadir, dan rujukan qiraat memakai kitab
+                Syekh Taufiq Ibrahim Dhamra.
+              </p>
+              <p>
+                Talaqqi qiraat pertama, yang akan dibacakan oleh murid ialah
+                qiraat Imam ‘Ashim dengan dua riwayat Imam Hafs dan Imam Syu’bah
+                melalui Tariqah Imam Syatibi. Setelah mengkhatamkan qiraat ini,
+                thalib berhak melanjutkan Qiraat Imam Nafi’ dengan riwayat Imam
+                Warsy.
+              </p>
+              <p>
+                Adapun tahapan-tahapan yang ditempuh oleh murid di Halaqah
+                Al-Qur’an Syekh Abdul Qadir adalah sebagai berikut:
+              </p>
+              <p>
+                1. Memperdengarkan bacaan Al-Qur’an, baik bil hifdzi maupun bin
+                nazhar kepada Muqri’ Halaqah.
+              </p>
+              <p>
+                2. Mengkhatamkan bacaan di hadapan Muqri' Halaqah sesuai dengan
+                kelasnya masing masing.
+              </p>
+              <p>
+                3. Mengikuti ujian kitab Tajwidul Huruf yang diuji langsung oleh
+                syekh Abdul Qadir (Sebelum ujian akan ada bimbingan dari Muqri'
+                halaqah).
+              </p>
+              <p>
+                4. Pemberian ijazah atau sanad langsung oleh maulana Syekh Abdul
+                Qadir apabila telah lulus ujian.
+              </p>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Visi Misi */}
       <section className="section-padding cream-section relative">
         <div className="absolute inset-0 pattern-islamic pointer-events-none" />

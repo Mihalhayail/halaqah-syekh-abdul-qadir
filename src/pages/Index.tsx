@@ -17,8 +17,9 @@ import teacher2 from "@/assets/tgk-zaky.png";
 import teacher3 from "@/assets/teacher-3.jpg";
 import gallery1 from "@/assets/gallery-1.jpg";
 import gallery2 from "@/assets/gallery-2.jpg";
-import gallery3 from "@/assets/gallery-3.jpg";
+import gallery3 from "@/assets/gallery-3.jpeg";
 import gallery4 from "@/assets/gallery-4.jpg";
+import gallery5 from "@/assets/gallery-5.webp";
 import { useState } from "react";
 
 const ease = [0.16, 1, 0.3, 1] as const;
@@ -61,11 +62,11 @@ const teachers = [
     specialty: "Pemimpin",
     image: teacher2,
   },
-  {
-    name: "Tgk. Aditya Wiryawan",
-    specialty: "Ketua/Wakil Pimpinan",
-    image: teacher3,
-  },
+  // {
+  //   name: "Tgk. Aditya Wiryawan",
+  //   specialty: "Ketua/Wakil Pimpinan",
+  //   image: teacher3,
+  // },
 ];
 
 const stats = [
@@ -78,21 +79,21 @@ const stats = [
 const testimonials = [
   {
     quote:
-      "Alhamdulillah, belajar di Halaqah Syekh Abdul Qadir mengubah cara saya memahami dan membaca Al-Qur'an. Sanad keilmuan yang terjaga membuat saya yakin dengan apa yang dipelajari.",
-    name: "Ilham Rivaldi",
-    program: "Senior Halaqah",
+      "Masuklah ke rumah-rumah melalui pintunya, dan pintu daripada ilmu adalah Al-Quran.",
+    name: "Syekh Abdul Qadir",
+    program: "Pembina Halaqah",
   },
   {
     quote:
       "Metode talaqqi yang diterapkan sangat efektif. Dalam waktu singkat, bacaan saya menjadi lebih baik dan sesuai kaidah tajwid yang benar.",
     name: "Muhammad Fajar",
-    program: "Anggota",
+    program: "Anggota Halaqah",
   },
   {
     quote:
       "Suasana belajar yang penuh adab dan ilmu. Para pengajar sangat sabar dan kompeten dalam membimbing setiap peserta.",
-    name: "Abdullah Syahid",
-    program: "Muqri Halaqah",
+    name: "Ilham Rivaldi",
+    program: "Anggota Halaqah",
   },
 ];
 
@@ -179,11 +180,13 @@ const Index = () => {
               {...fadeUp}
               className="text-body text-muted-foreground mt-6"
             >
-              Halaqah Syekh Abdul Qadir adalah majelis pembelajaran Al-Qur'an
-              yang berdiri dengan tujuan mulia: menjaga sanad keilmuan Al-Qur'an
-              dan melahirkan generasi huffazh yang berakhlak Qurani. Dengan
-              metode talaqqi dan musyafahah, setiap peserta dibimbing langsung
-              oleh pengajar yang memiliki sanad hingga Rasulullah ﷺ.
+              Halaqah Tajwidul Huruf atau sekarang yang dikenal dengan Halaqah
+              Al-Quran Syekh Abdul Qadir adalah majlis littaallum wa ta’lim
+              Al-Qur’an (belajar dan mengajar Al- Qur’an), melalui silsilah
+              sanad keilmuan Al- Qur’an dari Syekh Abdul Qadir Muhammad Tamam
+              Ali Al-Ausiy Asy-Syafi’i Al-Azhary. Halaqah ini berdiri pada tahun
+              2018 atas arahan dan amanah dari Maulana Syekh Abdul Qadir. Tujuan
+              berdirinya majelis ini adalah untuk membina para...
             </motion.p>
             <motion.div {...fadeUp}>
               <Link
@@ -304,20 +307,22 @@ const Index = () => {
             </h2>
           </motion.div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {[gallery1, gallery2, gallery3, gallery4].map((img, i) => (
-              <motion.div
-                key={i}
-                {...stagger}
-                transition={{ duration: 0.6, delay: i * 0.08, ease }}
-                className={`relative overflow-hidden rounded-2xl ${i === 0 ? "col-span-2 row-span-2" : ""}`}
-              >
-                <img
-                  src={img}
-                  alt={`Kegiatan halaqah ${i + 1}`}
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-700 aspect-square"
-                />
-              </motion.div>
-            ))}
+            {[gallery1, gallery2, gallery3, gallery4, gallery5].map(
+              (img, i) => (
+                <motion.div
+                  key={i}
+                  {...stagger}
+                  transition={{ duration: 0.6, delay: i * 0.08, ease }}
+                  className={`relative overflow-hidden rounded-2xl ${i === 0 ? "col-span-2 row-span-2" : ""}`}
+                >
+                  <img
+                    src={img}
+                    alt={`Kegiatan halaqah ${i + 1}`}
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-700 aspect-square"
+                  />
+                </motion.div>
+              ),
+            )}
           </div>
           <motion.div {...fadeUp} className="text-center mt-8">
             <Link

@@ -4,35 +4,73 @@ import PageHeader from "@/components/PageHeader";
 const ease = [0.16, 1, 0.3, 1] as const;
 import gallery1 from "@/assets/gallery-1.jpg";
 import gallery2 from "@/assets/gallery-2.jpg";
-import gallery3 from "@/assets/gallery-3.jpg";
+import gallery3 from "@/assets/gallery-3.jpeg";
 import gallery4 from "@/assets/gallery-4.jpg";
-import gallery5 from "@/assets/gallery-5.jpg";
+import gallery5 from "@/assets/gallery-5.webp";
+import gallery6 from "@/assets/gallery-6.webp";
+import gallery7 from "@/assets/gallery-7.webp";
+import gallery8 from "@/assets/gallery-8.webp";
+
 import { X } from "lucide-react";
 
-const categories = ["Semua", "Kegiatan Halaqah", "Khataman Qur'an", "Belajar Qira'at", "Majelis Ilmu"];
+const categories = [
+  "Semua",
+  "Kegiatan Halaqah",
+  "Khataman Qur'an",
+  "Belajar Qira'at",
+  "Majelis Ilmu",
+];
 
 const galleryItems = [
-  { src: gallery1, category: "Kegiatan Halaqah", alt: "Halaqah belajar Al-Qur'an di masjid" },
-  { src: gallery2, category: "Khataman Qur'an", alt: "Acara khataman Al-Qur'an" },
-  { src: gallery3, category: "Belajar Qira'at", alt: "Mempelajari bacaan Al-Qur'an" },
+  {
+    src: gallery1,
+    category: "Kegiatan Halaqah",
+    alt: "Halaqah belajar Al-Qur'an di masjid",
+  },
+  {
+    src: gallery2,
+    category: "Khataman Qur'an",
+    alt: "Acara khataman Al-Qur'an",
+  },
+  {
+    src: gallery3,
+    category: "Belajar Qira'at",
+    alt: "Mempelajari bacaan Al-Qur'an",
+  },
   { src: gallery4, category: "Majelis Ilmu", alt: "Majelis ilmu di masjid" },
-  { src: gallery5, category: "Kegiatan Halaqah", alt: "Syekh mengajar halaqah" },
-  { src: gallery1, category: "Belajar Qira'at", alt: "Kegiatan belajar qira'at" },
-  { src: gallery3, category: "Majelis Ilmu", alt: "Membaca Al-Qur'an" },
-  { src: gallery4, category: "Khataman Qur'an", alt: "Interior masjid saat kegiatan" },
+  {
+    src: gallery5,
+    category: "Kegiatan Halaqah",
+    alt: "Syekh mengajar halaqah",
+  },
+  {
+    src: gallery6,
+    category: "Belajar Qira'at",
+    alt: "Kegiatan belajar qira'at",
+  },
+  { src: gallery7, category: "Majelis Ilmu", alt: "Membaca Al-Qur'an" },
+  {
+    src: gallery8,
+    category: "Khataman Qur'an",
+    alt: "Interior masjid saat kegiatan",
+  },
 ];
 
 const Galeri = () => {
   const [activeCategory, setActiveCategory] = useState("Semua");
   const [lightbox, setLightbox] = useState<string | null>(null);
 
-  const filtered = activeCategory === "Semua"
-    ? galleryItems
-    : galleryItems.filter((item) => item.category === activeCategory);
+  const filtered =
+    activeCategory === "Semua"
+      ? galleryItems
+      : galleryItems.filter((item) => item.category === activeCategory);
 
   return (
     <div>
-      <PageHeader title="Galeri Kegiatan" subtitle="Dokumentasi kegiatan Halaqah Syekh Abdul Qadir" />
+      <PageHeader
+        title="Galeri Kegiatan"
+        subtitle="Dokumentasi kegiatan Halaqah Syekh Abdul Qadir"
+      />
 
       <section className="section-padding bg-background">
         <div className="container-custom">
@@ -54,7 +92,10 @@ const Galeri = () => {
           </div>
 
           {/* Grid */}
-          <motion.div layout className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <motion.div
+            layout
+            className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
+          >
             <AnimatePresence mode="popLayout">
               {filtered.map((item, i) => (
                 <motion.div

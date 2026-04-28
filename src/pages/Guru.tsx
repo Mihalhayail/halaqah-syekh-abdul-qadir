@@ -11,7 +11,7 @@ const teachersData = [
   {
     id: "syekh-abdul-qadir",
     name: "Syekh Abdul Qadir",
-    specialty: "AHLI QIRA'AT AL-QUR'AN",
+    specialty: "Pembina Halaqah",
     image: teacher1,
     bio: [
       "Fadhilatu Al-Syeikh Abdul Qadir Muhammad Tamam Ali Al-Ausiy Asy-Syafi’i Al-Azhary adalah sosok guru yang menjadi suri tauladan bagi para murid-muridnya. Beliau mendidik muridnya-muridnya dengan lisanulhal. Murid belajar menjadi seorang muslim yang bernafaskan AlQur’an dengan melihat langsung keseharian beliau.",
@@ -20,25 +20,23 @@ const teachersData = [
       "Syekh pernah bercerita kepada kami, “Dulu ketika kami belajar satu kitab kepada guru,tidak boleh naik tangga ke jenjang selanjutnya sebelum kitab yang kami pelajari mampu kami ajarkan. Begitu seterusnya sehingga kita terlatih dalam belajar dan mengajar.”",
       "Di lain kesempatan beliau juga bercerita kepada kami, “Ketika saya menyetorkan Qiraat, bacaan yang pertama saya baca adalah Qiraat Imam Ibnu Katsir karena Imam Syafi’i membaca qiraat tersebut.” Ini salah satu bukti cinta beliau kepada Imam Syafii. Beliau terkadang melempar candaan ketika shalat maghrib berjamaah, “Mana yang bermazhab Imam Hanafi ayo jadi imam, kita menghargai guru kita” begitu kata beliau, karena Imam Hanafi sangat dihormati oleh Imam Syafi’i.",
       "Ketika Syekh mengkhidmah Al-Qur’an,murid-murid banyak yang datang belajar kepada beliau, sehingga waktu beliau enuh dengan Al-Qur’an saja. Baik siang dan malam hari. Dalam mengajarkan Al-Qur’an, Maulana Syekh sangat memperhatikan dua hal, yaitu: praktek langsung dan teori ilmu Tajwid.",
+      "Ditambah lagi sebelum murid diizinkan membaca di hadapan beliau, sang murid harus memenuhi dua syarat utama, yaitu: iltizam dan adab. Untuk praktek langsung Maulana Syekh sangat detail memperhatikan pengucapan huruf yang keluar dari mulut muridnya. ",
+      "Satu persatu huruf dirapikannya. Karena kalau makhraj dan sifat serta intiqal (perpindahan)dari huruf ke huruf sudah bagus, insya Allah yang lain akan lebih mudah.",
+      "Untuk teorinya kami belajar pada hari sabtu setelah ashar. Dulunya kami belajar dari catatan beliau hasil talaqqi langsung dengan Syekh Aiman Suwaid hafizahullah dan guru lainnya. sekarang semuanya telah dicetak dalam sebuah buku yang berjudul, Tajwidul Huruf.",
     ],
     education: [
       "Al-Azhar University, Kairo - Fakultas .......",
-      "Ijazah Qira'at Sab'ah dari .......",
-      "Ijazah Qira'at 'Asyr dari ......",
+      "Ijazah Qira'at Sab'ah sughro dari .......",
+      "Ijazah Qira'at 'Asyr kubra dari ......",
     ],
-    expertise: [
-      "Qira'at Sab'ah",
-      "Qira'at 'Asyr",
-      "Tajwid",
-      "Tafsir Al-Qur'an",
-    ],
+    expertise: ["Qira'at Sab'ah", "Qira'at 'Asyr Kubro", "Tajwid"],
     sanad:
-      "Sanad bersambung melalui jalur Imam Hafs 'an 'Ashim hingga Rasulullah ﷺ, melalui para imam qurra' yang masyhur di setiap generasi.",
+      "Sanad bersambung melalui jalur Imam .... 'an hingga Rasulullah ﷺ, melalui para imam qurra' yang masyhur di setiap generasi.",
   },
   {
     id: "tgk-zaky-mubarrak",
     name: "Tgk Zaky Mubarrak",
-    specialty: "TAHFIZH AL-QUR'AN",
+    specialty: "Pimpinan Halaqah",
     image: teacher2,
     bio: "Tgk Zaky Mubarrak adalah hafizh Al-Qur'an yang telah menghafal 30 juz sejak usia muda. Beliau telah membimbing ratusan santri dalam program tahfizh dengan metode yang efektif dan teruji.",
     education: [
@@ -49,20 +47,20 @@ const teachersData = [
     sanad:
       "Sanad hafalan bersambung melalui jalur para huffazh Madinah hingga Rasulullah ﷺ.",
   },
-  {
-    id: "ustadz-ibrahim-hasan",
-    name: "Ustadz Ibrahim Hasan",
-    specialty: "TALAQQI & TAJWID",
-    image: teacher3,
-    bio: "Ustadz Ibrahim Hasan adalah pengajar tajwid dan talaqqi yang berpengalaman. Dengan pendekatan yang sabar dan metodis, beliau telah membantu banyak peserta memperbaiki bacaan Al-Qur'an mereka.",
-    education: [
-      "Universitas Al-Azhar, Kairo - Fakultas Bahasa Arab",
-      "Ijazah Tajwid dari Syekh Ayman Suwaid",
-    ],
-    expertise: ["Tajwid", "Talaqqi", "Musyafahah", "Bahasa Arab"],
-    sanad:
-      "Sanad tajwid bersambung melalui jalur ulama Mesir hingga Rasulullah ﷺ.",
-  },
+  // {
+  //   id: "ustadz-ibrahim-hasan",
+  //   name: "Tgk Aditya Wiryawan",
+  //   specialty: "Ketua Halaqah",
+  //   image: teacher3,
+  //   bio: "Ustadz Ibrahim Hasan adalah pengajar tajwid dan talaqqi yang berpengalaman. Dengan pendekatan yang sabar dan metodis, beliau telah membantu banyak peserta memperbaiki bacaan Al-Qur'an mereka.",
+  //   education: [
+  //     "Universitas Al-Azhar, Kairo - Fakultas Bahasa Arab",
+  //     "Ijazah Tajwid dari Syekh Ayman Suwaid",
+  //   ],
+  //   expertise: ["Tajwid", "Talaqqi", "Musyafahah", "Bahasa Arab"],
+  //   sanad:
+  //     "Sanad tajwid bersambung melalui jalur ulama Mesir hingga Rasulullah ﷺ.",
+  // },
 ];
 
 const GuruList = () => {

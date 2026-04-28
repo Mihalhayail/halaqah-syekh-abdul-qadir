@@ -10,7 +10,7 @@ const navLinks = [
   { label: "Struktur", path: "/guru" },
   { label: "Galeri", path: "/galeri" },
   { label: "Produk", path: "/produk" },
-  { label: "Kontak", path: "/kontak" },
+  // { label: "Kontak", path: "/kontak" },
 ];
 
 const Navbar = () => {
