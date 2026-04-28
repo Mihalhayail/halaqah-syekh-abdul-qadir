@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 const ease = [0.16, 1, 0.3, 1] as const;
 import { useParams, Link } from "react-router-dom";
 import PageHeader from "@/components/PageHeader";
-import teacher1 from "@/assets/syekh-abdul-qadir.png";
+import teacher1 from "@/assets/syekh-abdul-qadir.webp";
 import teacher2 from "@/assets/tgk-zaky.webp";
 // import teacher3 from "@/assets/teacher-3.jpg";
 import { ArrowLeft } from "lucide-react";

@@ -12,7 +12,7 @@ import {
 } from "lucide-react";
 import CountUp from "@/components/CountUp";
 import heroQuran from "@/assets/hero-quran.jpg";
-import teacher1 from "@/assets/syekh-abdul-qadir.jpg";
+import teacher1 from "@/assets/syekh-abdul-qadir.webp";
 import teacher2 from "@/assets/tgk-zaky.webp";
 // import teacher3 from "@/assets/teacher-3.jpg";
 import gallery1 from "@/assets/gallery-1.jpg";
